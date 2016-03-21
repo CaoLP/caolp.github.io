@@ -1,0 +1,197 @@
+@import "variable.less";
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: @yellow;
+}
+
+body {
+  background: url("../images/background.png") no-repeat center;
+  background-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-size: 100% !important;
+  display: inline-block;
+  vertical-align: text-bottom;
+
+  &.icon-facebook {
+    background: url("../images/icons/facebook.png") no-repeat center;
+  }
+  &.icon-instagram {
+    background: url("../images/icons/instagram.png") no-repeat center;
+  }
+  &.icon-youtube {
+    background: url("../images/icons/youtube.png") no-repeat center;
+  }
+  &.icon-google-plug {
+    background: url("../images/icons/google-plug.png") no-repeat center;
+  }
+  &.icon-house {
+    background: url("../images/icons/house.png") no-repeat center;
+    width: 19px;
+  }
+  &.icon-trong {
+    background: url("../images/icons/trong.png") no-repeat center;
+    width: 15px;
+  }
+  &.icon-chieng {
+    background: url("../images/icons/cheng.png") no-repeat center;
+    width: 20px;
+  }
+  &.icon-dui {
+    background: url("../images/icons/dui.png") no-repeat center;
+    width: 14px;
+  }
+  &.icon-search {
+    background: url("../images/icons/search.png") no-repeat center;
+  }
+
+}
+
+.page {
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+}
+
+.top-social {
+  display: inline-block;
+  a {
+    display: inline-block;
+  }
+  .icon {
+    width: 22px;
+    height: 22px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;;
+  }
+}
+
+.top-search-box {
+  float: right;
+  background: url("../images/bg-search.png") no-repeat center;
+  background-size: 100%;
+  width: 192px;
+  height: 30px;
+  position: relative;
+  input {
+    margin: 5px 0px 5px 5px;
+    height: 20px;
+    display: inline-block;
+    width: 157px;
+    border: none;
+    padding: 0;
+    float: left;
+  }
+  button {
+    margin: 5px 0px 5px 0px;
+    height: 20px;
+    border: none;
+    display: inline-block;
+    background: none;
+    float: left;
+    .icon {
+      height: 16px;
+      width: 12px;
+    }
+  }
+}
+
+.nav {
+  height: 40px;
+  background: @light-yellow;
+  text-align: center;
+  margin-top: 50px;
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    img {
+      width: 142px;
+      height: 142px;
+    }
+  }
+  & > .container {
+    padding: 0 50px;
+    position: relative;
+  }
+  ul {
+    list-style: none;
+    position: relative;
+    & > li {
+      display: inline-block;
+      position: relative;
+      > a {
+        position: relative;
+        display: block;
+        line-height: 40px;
+        padding: 0px 15px;
+        color: @dark-yellow;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+  }
+  .nav-left, .nav-right {
+    width: 50%;
+    padding: 0;
+    margin: 0px;
+  }
+  .nav-left {
+    float: left;
+  }
+  .nav-right {
+    float: right;
+  }
+}
+
+.home-caption {
+  position: absolute;
+  right: 15%;
+  top: 30%;
+  z-index: 10;
+
+  img {
+    width: 289px;
+    height: 177px;
+  }
+}
+
+.chieng {
+  position: absolute;
+  bottom: -200px;
+  left: 30%;
+  z-index: 10;
+  img {
+    width: 603px;
+    height: 603px;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: @brown;
+  font-size: 18px;
+  color: @white;
+  text-align: center;
+  line-height: 20px;
+  padding: 15px;
+  z-index: 11;
+}
