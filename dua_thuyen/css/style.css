@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'UTMAvo Regular';
+  font-family: 'UTMAvo';
   src: url('../fonts/utm_avo-webfont.eot');
   src: url('../fonts/utm_avo-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/utm_avo-webfont.woff2') format('woff2'), url('../fonts/utm_avo-webfont.woff') format('woff'), url('../fonts/utm_avo-webfont.ttf') format('truetype'), url('../fonts/utm_avo-webfont.svg#utm_avoregular') format('svg');
   font-weight: normal;
@@ -26,6 +26,13 @@
   font-weight: normal;
   font-style: normal;
 }
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 html,
 body {
   margin: 0;
@@ -43,6 +50,12 @@ footer {
   font-size: 14px;
   color: #ffffff;
 }
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
 .bg-orange {
   background: #f9761e;
 }
@@ -58,6 +71,65 @@ footer {
 .text-center {
   text-align: center;
 }
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row :before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:before {
+  display: table;
+  content: " ";
+}
+.row:after {
+  clear: both;
+}
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.grid-1 {
+  width: 8.333333333333334%;
+}
+.grid-2 {
+  width: 16.666666666666668%;
+}
+.grid-3 {
+  width: 25%;
+}
+.grid-4 {
+  width: 33.333333333333336%;
+}
+.grid-5 {
+  width: 41.666666666666664%;
+}
+.grid-6 {
+  width: 50%;
+}
+.grid-7 {
+  width: 58.333333333333336%;
+}
+.grid-8 {
+  width: 66.66666666666667%;
+}
+.grid-9 {
+  width: 75%;
+}
+.grid-10 {
+  width: 83.33333333333333%;
+}
+.grid-11 {
+  width: 91.66666666666667%;
+}
+.grid-12 {
+  width: 100%;
+}
 .container {
   width: 1170px;
   margin-right: 0;
@@ -68,6 +140,28 @@ footer {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+.input-group input {
+  float: left;
+  display: table-cell;
+}
+.input-group button {
+  float: left;
+  height: 35px;
+}
+.input-group .input-group-addon {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: table-cell;
+}
+.input-group .input-group-addon:last-child {
+  border-left: 0;
 }
 .nav {
   margin-bottom: 0;
@@ -128,7 +222,7 @@ footer {
 .nav .nav-right > li > a {
   font-size: 14px;
   font-weight: normal;
-  width: 60px;
+  width: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -223,6 +317,53 @@ footer {
   -webkit-border-radius: 11px;
   position: absolute;
   right: 0;
+  top: 62px;
+  width: 400px;
+  padding: 15px;
+}
+.login-box .login-box-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.login-box .login-box-content h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.login-box .login-box-content > .input {
+  margin-bottom: 5px;
+}
+.login-box .login-box-content > .input label {
+  line-height: 35px;
+  text-align: left;
+}
+.login-box .login-box-content > .input input {
+  line-height: 35px;
+  height: 35px;
+  border: none;
+  background-color: #fff2ae;
+  -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.login-box .login-box-content .checkbox {
+  text-align: left;
+}
+.login-box .login-box-content .checkbox label {
+  display: inline-block;
+}
+.login-box .login-box-content .checkbox input {
+  display: inline-block;
+}
+.login-box .login-box-content .forget-link {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
 }
 .page {
   min-height: 720px;
