@@ -1,14 +1,4 @@
-@blue: #2F74B0;
-@black: #000000;
-@white: #fff;
-@yellow: #fff2ae;
-@orange: #f9761e;
-@hard_orange: #843703;
-@green: #7cb591;
-@darkgray: #2f3333;
-@black_opacity: rgba(0, 0, 0, 0.2);
-@grid-columns: 12;
-@grid-gutter-width: 30px;
+@import "variable";
 //function
 .generate-columns(@n, @i: 1) when (@i =< @n) {
   .grid-@{i} {
@@ -145,8 +135,16 @@ footer {
   background: @darkgray;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .row {
@@ -177,8 +175,8 @@ footer {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  //padding-left: 15px;
+  //padding-right: 15px;
 }
 
 .input-group {
@@ -189,10 +187,6 @@ footer {
     float: left;
     display: table-cell;
   }
-  button {
-    float: left;
-    height: 35px;
-  }
   .input-group-addon {
     width: 1%;
     white-space: nowrap;
@@ -200,6 +194,30 @@ footer {
     display: table-cell;
     &:last-child {
       border-left: 0;
+    }
+  }
+  .input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+    & > .btn {
+      float: left;
+      height: 35px;
+      position: relative;
+      border: none;
+      background-color: @green;
+      -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    &:last-child {
+      & > .btn {
+        z-index: 2;
+        margin-left: -1px;
+      }
     }
   }
 }
@@ -378,6 +396,7 @@ footer {
   top: 62px;
   width: 400px;
   padding: 15px;
+  display: none;
   .login-box-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -409,6 +428,7 @@ footer {
     }
     .checkbox {
       text-align: left;
+      margin-left: -5px;
       label {
         display: inline-block;
       }
@@ -418,9 +438,46 @@ footer {
     }
     .forget-link {
       position: absolute;
-      bottom: 15px;
+      bottom: 0px;
       right: 15px;
     }
+    .social-btn-group {
+      .grid-9 {
+        div {
+          &:first-child {
+            margin-top: 5px;
+          }
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .login-box-close {
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+    background: url("../images/close-btn.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  display: inline-block;
+  vertical-align: middle;
+  &.icon-facebook {
+    background: url("../images/icons/facebook-dangnhap.png");
+  }
+  &.icon-google-plug {
+    background: url("../images/icons/google-dangnhap.png");
   }
 }
 

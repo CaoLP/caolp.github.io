@@ -68,8 +68,14 @@ footer {
 .bg-darkgray {
   background: #2f3333;
 }
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .row {
   margin-left: -15px;
@@ -138,8 +144,6 @@ footer {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .input-group {
   position: relative;
@@ -150,10 +154,6 @@ footer {
   float: left;
   display: table-cell;
 }
-.input-group button {
-  float: left;
-  height: 35px;
-}
 .input-group .input-group-addon {
   width: 1%;
   white-space: nowrap;
@@ -162,6 +162,28 @@ footer {
 }
 .input-group .input-group-addon:last-child {
   border-left: 0;
+}
+.input-group .input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.input-group .input-group-btn > .btn {
+  float: left;
+  height: 35px;
+  position: relative;
+  border: none;
+  background-color: #7cb591;
+  -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.input-group .input-group-btn:last-child > .btn {
+  z-index: 2;
+  margin-left: -1px;
 }
 .nav {
   margin-bottom: 0;
@@ -320,6 +342,7 @@ footer {
   top: 62px;
   width: 400px;
   padding: 15px;
+  display: none;
 }
 .login-box .login-box-content {
   padding-left: 15px;
@@ -353,6 +376,7 @@ footer {
 }
 .login-box .login-box-content .checkbox {
   text-align: left;
+  margin-left: -5px;
 }
 .login-box .login-box-content .checkbox label {
   display: inline-block;
@@ -362,8 +386,40 @@ footer {
 }
 .login-box .login-box-content .forget-link {
   position: absolute;
-  bottom: 15px;
+  bottom: 0px;
   right: 15px;
+}
+.login-box .login-box-content .social-btn-group .grid-9 div {
+  margin-bottom: 5px;
+}
+.login-box .login-box-content .social-btn-group .grid-9 div:first-child {
+  margin-top: 5px;
+}
+.login-box .login-box-close {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  background: url("../images/close-btn.png") no-repeat center;
+  background-size: 100%;
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon.icon-facebook {
+  background: url("../images/icons/facebook-dangnhap.png");
+}
+.icon.icon-google-plug {
+  background: url("../images/icons/google-dangnhap.png");
 }
 .page {
   min-height: 720px;
