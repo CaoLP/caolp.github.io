@@ -1,0 +1,55 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(15deg);
+  }
+  100% {
+    -moz-transform: rotate(30deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  50% {
+    -ms-transform: rotate(15deg);
+  }
+  100% {
+    -ms-transform: rotate(30deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  50% {
+    -o-transform: rotate(15deg);
+  }
+  100% {
+    -o-transform: rotate(30deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}

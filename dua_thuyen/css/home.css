@@ -1,11 +1,137 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(15deg);
+  }
+  100% {
+    -moz-transform: rotate(30deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  50% {
+    -ms-transform: rotate(15deg);
+  }
+  100% {
+    -ms-transform: rotate(30deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  50% {
+    -o-transform: rotate(15deg);
+  }
+  100% {
+    -o-transform: rotate(30deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
 .banner {
   background: #ffffff url("../images/homepage/bg-bg-05.png") no-repeat center;
   background-size: 100%;
   height: 1250px;
   position: relative;
+  overflow: hidden;
 }
 .banner .wave {
   position: absolute;
   bottom: -70px;
   z-index: 10;
+}
+#lich-trinh .container,
+#gioi-thieu .container,
+#ban-to-chuc .container,
+#lien-he .container {
+  height: 652px;
+  position: relative;
+}
+#nha-tai-tro .container {
+  height: 407px;
+  position: relative;
+}
+#lich-trinh table {
+  color: #f9761e;
+  position: absolute;
+  top: 70px;
+  left: 90px;
+  font-family: "UTMSwissCondensed";
+  font-weight: bold;
+  font-size: 30px;
+}
+#lich-trinh table tr > td {
+  border: 5px solid;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+#lich-trinh table tr > td.has-content {
+  background: #fff2ae;
+}
+#lich-trinh table tr > td.active {
+  background: #000000;
+}
+#lich-trinh .sun .bg {
+  background: url("../images/homepage/matroi.png") no-repeat center;
+  background-size: 100%;
+  width: 209px;
+  height: 210px;
+  position: absolute;
+  bottom: 100px;
+  left: 520px;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 1000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 1000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-animation-name: spin;
+  -o-animation-duration: 1000ms;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+}
+#gioi-thieu .container {
+  background: #7cb591 url("../images/homepage/background-Gioithieu.png") no-repeat top;
+  background-size: 1280px auto;
+}
+#ban-to-chuc .container {
+  background: #fff2ae url("../images/homepage/background-bantochuc.png") no-repeat 0;
+  background-size: 1175px auto;
+}
+#lien-he .container {
+  background: #fff2ae url("../images/homepage/background-lienhe.png") no-repeat 0;
+  background-size: 1190px auto;
+  background-position-x: -20px;
 }

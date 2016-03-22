@@ -60,13 +60,13 @@ footer {
   background: #f9761e;
 }
 .bg-yellow {
-  background: #fff2ae;
+  background-color: #fff2ae;
 }
 .bg-green {
-  background: #7cb591;
+  background-color: #7cb591;
 }
 .bg-darkgray {
-  background: #2f3333;
+  background-color: #2f3333;
 }
 .text-left {
   text-align: left;
@@ -423,5 +423,5 @@ footer {
   background: url("../images/icons/google-dangnhap.png");
 }
 .page {
-  min-height: 720px;
+  min-height: 300px;
 }

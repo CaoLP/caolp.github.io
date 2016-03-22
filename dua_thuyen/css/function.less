@@ -1,0 +1,54 @@
+@-webkit-keyframes spin {
+  .rotate("-webkit-");
+}
+
+@-moz-keyframes spin {
+  .rotate("-moz-");
+}
+
+@-ms-keyframes spin {
+  .rotate("-ms-");
+}
+
+@-o-keyframes spin {
+  .rotate("-o-");
+}
+
+@keyframes spin {
+  .rotate("");
+}
+
+.rotate (@key) {
+  @tyle: "transform";
+  0% {
+      @{key}@{tyle}: rotate(0deg);
+  }
+  50% {
+      @{key}@{tyle}: rotate(15deg);
+  }
+  100% {
+      @{key}@{tyle}: rotate(30deg);
+  }
+}
+
+.using-animation(@key, @time, @iteration-count, @timing-function){
+  -webkit-animation-name: @key;
+  -webkit-animation-duration: @time;
+  -webkit-animation-iteration-count: @iteration-count;
+  -webkit-animation-timing-function: @timing-function;
+
+  -moz-animation-name: @key;
+  -moz-animation-duration: @time;
+  -moz-animation-iteration-count: @iteration-count;
+  -moz-animation-timing-function: @timing-function;
+
+  -ms-animation-name: @key;
+  -ms-animation-duration: @time;
+  -ms-animation-iteration-count: @iteration-count;
+  -ms-animation-timing-function: @timing-function;
+
+  -o-animation-name: @key;
+  -o-animation-duration: @time;
+  -o-animation-iteration-count: @iteration-count;
+  -o-animation-timing-function: @timing-function;
+}
