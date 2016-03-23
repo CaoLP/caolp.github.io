@@ -46,6 +46,7 @@ a {
 }
 footer {
   height: 96px;
+  padding-top: 20px;
   background: #000000;
   font-size: 14px;
   color: #ffffff;
@@ -141,6 +142,11 @@ footer {
   margin-right: 0;
   margin-left: 0;
 }
+.container.fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -229,9 +235,11 @@ footer {
 .nav .logo {
   float: left;
   padding-top: 5px;
+  margin-left: 70px;
 }
 .nav .logo img {
-  width: 32px;
+  width: 178px;
+  height: 44px;
 }
 .nav .nav-left {
   float: left;
@@ -241,6 +249,7 @@ footer {
   float: right !important;
   padding: 0;
   text-align: center;
+  margin-right: -15px;
 }
 .nav .nav-right > li > a {
   font-size: 14px;
@@ -255,12 +264,8 @@ footer {
 }
 .nav .nav-right .btn-login {
   color: #f9761e;
-  background: #843703;
-  border-radius: 9px;
-  -moz-border-radius: 9px;
-  -webkit-border-radius: 9px;
   padding: 0px 10px;
-  margin-top: 20px;
+  margin-top: 17px;
   margin-right: 10px;
 }
 .nav .dropdown-menu {
@@ -422,6 +427,33 @@ footer {
 .icon.icon-google-plug {
   background: url("../images/icons/google-dangnhap.png");
 }
+.icon.icon-pin {
+  background: url("../images/icons/pin.png");
+}
+.icon.icon-phone {
+  background: url("../images/icons/phone.png");
+}
+.icon.icon-email {
+  background: url("../images/icons/email.png");
+}
 .page {
   min-height: 300px;
+  overflow: hidden;
+}
+.form-control {
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 0px 0px 5px 1px #f9761e;
+  -moz-box-shadow: inset 0px 0px 5px 1px #f9761e;
+  box-shadow: inset 0px 0px 5px 1px #f9761e;
+  padding: 15px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+input.form-control {
+  height: 38px;
+}
+.bottom-logo {
+  height: 36px;
 }

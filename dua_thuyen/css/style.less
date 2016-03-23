@@ -106,6 +106,7 @@ a {
 
 footer {
   height: 96px;
+  padding-top: 20px;
   background: @black;
   font-size: 14px;
   color: @white;
@@ -170,6 +171,11 @@ footer {
   width: 1170px;
   margin-right: 0;
   margin-left: 0;
+  &.fluid{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .container {
@@ -271,8 +277,10 @@ footer {
   .logo {
     float: left;
     padding-top: 5px;
+    margin-left: 70px;
     img {
-      width: 32px;
+      width : 178px;
+      height : 44px;
     }
   }
   .nav-left {
@@ -283,6 +291,7 @@ footer {
     float: right !important;
     padding: 0;
     text-align: center;
+    margin-right: -15px;
     :last-child {
 
     }
@@ -303,12 +312,8 @@ footer {
     }
     .btn-login {
       color: @orange;
-      background: @hard_orange;
-      border-radius: 9px;
-      -moz-border-radius: 9px;
-      -webkit-border-radius: 9px;
       padding: 0px 10px;
-      margin-top: 20px;
+      margin-top: 17px;
       margin-right: 10px;
     }
   }
@@ -480,8 +485,36 @@ footer {
   &.icon-google-plug {
     background: url("../images/icons/google-dangnhap.png");
   }
+  &.icon-pin {
+    background: url("../images/icons/pin.png");
+  }
+  &.icon-phone {
+    background: url("../images/icons/phone.png");
+  }
+  &.icon-email {
+    background: url("../images/icons/email.png");
+  }
 }
 
 .page {
   min-height: 300px;
+  overflow: hidden;
+}
+
+.form-control{
+  width: 100%;
+  border: none;
+  background-color: @white;
+  -webkit-box-shadow: inset 0px 0px 5px 1px @orange;
+  -moz-box-shadow: inset 0px 0px 5px 1px @orange;
+  box-shadow: inset 0px 0px 5px 1px @orange;
+  padding: 15px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+input.form-control{
+  height : 38px;
+}
+.bottom-logo{
+  height : 36px;
 }
