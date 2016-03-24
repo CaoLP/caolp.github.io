@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cuoc-dua.css">
+</head>
+<body>
+<header>
+    <nav class="nav fixed">
+        <div class="container fluid">
+            <div class="logo">
+                <a href="index.html"><img src="images/homepage/logo.png"></a>
+            </div>
+            <ul class="nav-bar nav-left">
+                <li class="dropdown">
+                    <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Ngày hội</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#gioi-thieu">Giới thiệu</a></li>
+                        <li><a href="index.html#ban-to-chuc">Ban tổ chức</a></li>
+                        <li><a href="index.html#nha-tai-tro">Nhà tài trợ</a></li>
+                        <li><a href="index.html#lien-he">Liên hệ</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="hoat-dong.html" class="dropdown-toggle" data-toggle="dropdown">Hoạt động</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hoat-dong.html#thong-tin">Thông tin</a></li>
+                        <li><a href="hoat-dong.html#hoat-dong">Hoạt động</a></li>
+                        <li><a href="hoat-dong.html#mua-ve">Mua vé</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown active">
+                    <a href="cuoc-dua.html" class="dropdown-toggle" data-toggle="dropdown">Cuộc đua</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#the-le">Thể lệ</a></li>
+                        <li><a href="#giai-thuong">Giải thưởng</a></li>
+                        <li><a href="#so-do">Sơ đồ đường đua</a></li>
+                        <li><a href="#dang-ky">Đăng ký thuyền</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="thi-thiet-ke.html" class="dropdown-toggle" data-toggle="dropdown">Thi thiết kế</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="thi-thiet-ke.html#the-le">Thể lệ</a></li>
+                        <li><a href="thi-thiet-ke.html#giai-thuong">Giải thưởng</a></li>
+                        <li><a href="thi-thiet-ke.html#trang-thiet-ke">Trang thiết kế</a></li>
+                        <li><a href="thi-thiet-ke.html#phong-tranh">Phòng trưng bày & bình chọn</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav-bar nav-right bg-orange">
+                <li><a href="cuoc-dua.html#dang-ky">Đăng ký tham gia</a></li>
+                <li><a href="hoat-dong.html#mua-ve">Mua vé tham dự</a></li>
+                <li>
+                    <a href="" class="btn-login"><img src="images/icons/login.png" width="23" height="28"></a>
+                    <div class="login-box" id="login-box">
+                        <a href="" class="login-box-close"></a>
+                        <div class="login-box-content">
+                            <h1 class="text-center">Đăng nhập</h1>
+                            <div class="row input">
+                                <label for="email" class="grid-3">Email</label>
+                                <div class="grid-9">
+                                    <input id="email" placeholder="Nhập email...">
+                                </div>
+                            </div>
+                            <div class="row input">
+                                <label for="password" class="grid-3">Mật khẩu</label>
+                                <div class="input-group grid-9">
+                                    <input id="password" placeholder="Nhập mật khẩu..." class="">
+                                    <div class="input-group-btn">
+                                        <button class="btn">Go</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="grid-3"></div>
+                                <div class="grid-9">
+                                    <div class="row checkbox">
+                                        <input type="checkbox" id="remember"><label for="remember">Ghi nhớ mật
+                                        khẩu</label>
+                                    </div>
+                                    <a href="" class="pull-right forget-link">Quên mật khẩu?</a>
+                                </div>
+                            </div>
+                            <div class="social-btn-group">
+                                <div class="row">
+                                    <div class="grid-3"></div>
+                                    <div class="grid-9">
+                                        <div class="text-left">
+                                            <a href=""><i class="icon icon-facebook"></i> Đăng nhập bằng Facbook</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="grid-3"></div>
+                                    <div class="grid-9">
+                                        <div class="text-left">
+                                            <a href=""><i class="icon icon-google-plug"></i> Đăng nhập bằng Google+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="page" id="dua-thuyen">
+    <div class="container fluid banner">
+        <div class="content">
+            <h1 class="color-n-red">
+                CUỘC ĐUA<br>
+                THUYỀN RỒNG
+            </h1>
+            <p>
+                Ngoài mục đích giữ gìn truyền thống lâu đời của cha ông, Hội đua thuyền còn tạo cơ hội để các đội tham
+                gia thể hiện tài chèo lái và tinh thần đoàn kết trong cuộc thi.
+            </p>
+        </div>
+        <div class="overlay"></div>
+        <video class="banner-video" controls="false" autoplay="true" loop="true">
+            <source src="images/cuoc-dua/cuocduathuyen.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+<div class="page bg-yellow" id="the-le">
+    <div class="container fluid">
+        <div class="content">
+            <h1 class="color-n-red">THỂ LỆ</h1>
+            <h2 class="color-green">VÒNG</h2>
+            <ul>
+                <li>Vòng loại: tất cả các đội sẽ thi cùng lúc, 5 đội về trước sẽ vào chung kết xếp hạng.</li>
+                <li>Vòng chung kết xếp hạng (1, 2, 3, khuyến khích).</li>
+            </ul>
+            <h2 class="color-orange">ĐỐI TƯỢNG</h2>
+            <ul>
+                <li>Công dân có độ tuổi từ 18-30, đã được biết hoặc đào tạo qua kĩ năng chèo thuyền đua.</li>
+                <li>Người tham gia không mắc các bệnh như bệnh tim, cao huyết áp hoặc bất kì bệnh nào tránh hoạt động
+                    mạnh, mọi sự cố xảy ra ban tổ chức sẽ không chịu trách nhiệm.
+                </li>
+                <li>Công dân Việt Nam và công dân nước ngoài đều có thể tham gia, đối với công dân nước ngoài, khi tham
+                    gia cần nộp bản photo passport cho ban tổ chức.
+                </li>
+            </ul>
+            <h2 class="color-black">GIỚI HẠN</h2>
+            <ul>
+                <li>Các đội thi được đăng kí nhiều nhất là 30 người (25 người chèo chính và 5 chèo dự bị).</li>
+                <li>Các vị trí: lái thuyền, cầm phách, cầm tổng, dân bơi được các đội tự phân chia và ghi rõ trong form
+                    đăng kí.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="page bg-light-orange" id="giai-thuong">
+    <div class="container fluid">
+        <div class="content bg-orange">
+            <h1>GIẢI THƯỞNG</h1>
+            <table>
+                <tr>
+                    <td class="color-gold"><i class="icon icon-cup"></i> giải nhất</td>
+                    <td>50 TRIỆU TIỀN MẶT + VOUCHER DU LỊCH</td>
+                </tr>
+                <tr>
+                    <td class="color-gold"><i class="icon icon-medal"></i> giải nhì</td>
+                    <td>20 TRIỆU TIỀN MẶT + VOUCHER DU LỊCH</td>
+                </tr>
+                <tr>
+                    <td class="color-gold"><i class="icon icon-medal"></i> giải ba</td>
+                    <td>10 TRIỆU TIỀN MẶT + kỉ niệm chương</td>
+                </tr>
+                <tr>
+                    <td class="color-gold"><i class="icon icon-medal"></i> giải bình chọn</td>
+                    <td>5 triệu tiền mặt + kỉ niệm chương</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="page bg-orange" id="so-do">
+    <div class="container overlay bg-green"></div>
+    <div class="container fluid">
+        <div class="content">
+            <h1>SƠ ĐỒ ĐƯỜNG ĐUA</h1>
+            <img src="images/cuoc-dua/map.png">
+        </div>
+    </div>
+</div>
+<div class="page bg-yellow" id="dang-ky">
+    <div class="container fluid">
+        <div class="content text-center">
+            <img class="left" src="images/cuoc-dua/left.png">
+            <a class="button btn-dangky color-black">ĐĂNG KÝ</a>
+            <img class="right" src="images/cuoc-dua/right.png">
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="grid-8">
+                <img class="bottom-logo" src="images/logo.png">
+                <img class="bottom-logo" src="images/logo-sgt.png">
+                <div class="text-left">Bản quyền 2017 © Tổng Công ty Du Lịch Sài Gòn - Saigontourist</div>
+            </div>
+            <div class="grid-4">
+                <div class="social-btn-group text-center">
+                    <a href="" class="social-btn youtube"></a>
+                    <a href="" class="social-btn facebook"></a>
+                    <a href="" class="social-btn google-plug"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<div class="modal" id="dang-ky-modal">
+    <a class="close-modal-btn"><img src="images/close-modal-button.png"></a>
+    <div class="tabs">
+        <ul>
+            <li class="active">
+                <a class="tab" target="tab-1">
+                    <b>BƯỚC 1 :</b>
+                    <h2>THÔNG TIN</h2>
+                </a>
+            </li>
+            <li>
+                <a class="tab" target="tab-2">
+                    <b>BƯỚC 2 :</b>
+                    <h2>XÁC NHẬN</h2>
+                </a>
+            </li>
+            <li>
+                <a class="tab" target="tab-3">
+                    <b>BƯỚC 3 :</b>
+                    <h2>HOÀN TẤT</h2>
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <div class="tab-content active" id="tab-1">
+            <div class="row">
+                <div class="grid-6">
+                    <div class="row">
+                        <div class="grid-12">
+                            <label>Họ và tên</label>
+                            <input class="form-control" placeholder="">
+                        </div>
+                        <div class="grid-12">
+                            <label>Quốc tịch</label>
+                            <select class="form-control" placeholder="">
+                                <option value="vn">Việt Nam</option>
+                                <option value="lao">Lào</option>
+                                <option value="cam">Campuchia</option>
+                                <option value="thaid">Thái Lan</option>
+                            </select>
+                        </div>
+                        <div class="grid-12">
+                            <div class="row">
+                                <label class="grid-12">Ngày sinh</label>
+                                <div class="grid-4">
+                                    <select id="day" class="form-control" placeholder="">
+
+                                    </select>
+                                </div>
+                                <div class="grid-4">
+                                    <select class="form-control" placeholder="">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div class="grid-4">
+                                    <select id="year" class="form-control" placeholder="">
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-12">
+                            <div class="input-radio">
+                                <input name="genner" id="male" type="radio">
+                                <label for="male">Nam</label>
+                                <input name="genner" id="female" type="radio">
+                                <label for="female">Nữ</label>
+                            </div>
+                        </div>
+                        <div class="grid-12">
+                            <label>Email</label>
+                            <input class="form-control placeholder-right"  placeholder="@gmail.com">
+                        </div>
+                        <div class="grid-12">
+                            <label>Số điện thoại</label>
+                            <input class="form-control" placeholder="+84...">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-6">
+                    <div class="grid-12">
+                        <label>Hình thức tham gia</label>
+                        <div class="input-radio">
+                            <input name="genner" id="hinhthuc1" type="radio">
+                            <label for="hinhthuc1">Nhóm</label>
+                            <input name="genner" id="hinhthuc2" type="radio">
+                            <label for="hinhthuc2">Cá nhân</label>
+                        </div>
+                    </div>
+                    <div class="grid-12">
+                        <label>Tên các thành viên</label>
+                        <textarea class="form-control" placeholder="Nhập tên..." rows="5"></textarea>
+                    </div>
+                    <div class="grid-12">
+                        <label>Chia sẻ cảm nghĩ về cuộc thi</label>
+                        <textarea class="form-control" placeholder="Nhập chia sẻ..." rows="5"></textarea>
+                    </div>
+                    <div class="grid-12 text-center">
+                        <button class="button button-red">ĐĂNG KÍ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content hide" id="tab-2">tab2</div>
+        <div class="tab-content hide" id="tab-3">tab3</div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

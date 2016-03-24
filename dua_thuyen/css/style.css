@@ -56,6 +56,9 @@ footer {
 .bg-orange {
   background: #f9761e;
 }
+.bg-light-orange {
+  background: #fb9b49;
+}
 .bg-yellow {
   background-color: #fff2ae;
 }
@@ -64,6 +67,30 @@ footer {
 }
 .bg-darkgray {
   background-color: #2f3333;
+}
+.bg-n-red {
+  background-color: #d32227;
+}
+.color-orange {
+  color: #f9761e;
+}
+.color-yellow {
+  color: #fff2ae !important;
+}
+.color-gold {
+  color: #fff200 !important;
+}
+.color-green {
+  color: #7cb591 !important;
+}
+.color-darkgray {
+  color: #2f3333 !important;
+}
+.color-black {
+  color: #000000 !important;
+}
+.color-n-red {
+  color: #d32227 !important;
 }
 .text-left {
   text-align: left;
@@ -432,6 +459,18 @@ footer {
 .icon.icon-email {
   background: url("../images/icons/email.png");
 }
+.icon.icon-time {
+  background: url("../images/icons/time.png");
+}
+.icon.icon-ticket {
+  background: url("../images/icons/ticket.png");
+}
+.icon.icon-cup {
+  background: url("../images/icons/cup.png");
+}
+.icon.icon-medal {
+  background: url("../images/icons/medal.png");
+}
 .page {
   min-height: 300px;
   overflow: hidden;
@@ -443,13 +482,116 @@ footer {
   -webkit-box-shadow: inset 0px 0px 5px 1px #f9761e;
   -moz-box-shadow: inset 0px 0px 5px 1px #f9761e;
   box-shadow: inset 0px 0px 5px 1px #f9761e;
-  padding: 15px 10px;
+  padding: 0px 10px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-input.form-control {
+input.form-control,
+select.form-control {
   height: 38px;
+}
+textarea.form-control {
+  padding-top: 15px;
+}
+.placeholder-right:-moz-placeholder {
+  text-align: right;
+}
+.placeholder-right::-webkit-input-placeholder {
+  text-align: right;
+}
+.input-radio input,
+.input-radio label {
+  display: inline-block;
 }
 .bottom-logo {
   height: 36px;
+}
+.button {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 57px;
+  color: #f9761e;
+  font-weight: bold;
+  background: none;
+  font-size: 36px;
+  border: 1px solid #f9761e;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button.button-yellow {
+  color: #000000;
+  border: 1px solid #fff2ae;
+}
+.button.button-red {
+  color: #000000;
+  border: 1px solid #d32227;
+}
+.modal {
+  display: none;
+  background: #f9761e;
+  width: 1179px;
+  height: 649px;
+  position: fixed;
+  z-index: 100;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.modal .close-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  cursor: pointer;
+}
+.modal .close-modal-btn img {
+  width: 20px;
+  height: 20px;
+}
+.tabs ul {
+  list-style: none;
+  display: table;
+  margin: 30px 50px 5px 50px;
+}
+.tabs ul li {
+  display: table-cell;
+  cursor: pointer;
+  width: 10%;
+  padding-left: 10px;
+  border-left: 2px solid #f9761e;
+}
+.tabs ul li.active,
+.tabs ul li:hover,
+.tabs ul li:focus {
+  border-left: 2px solid #d32227;
+}
+.tabs ul li b {
+  font-size: 24px;
+}
+.tabs ul li h2 {
+  margin: 0;
+  font-size: 48px;
+}
+.tabs hr {
+  margin: 0 90px;
+  display: block;
+  border-color: #000000;
+}
+.tabs .tab-content {
+  margin: 20px 90px;
+}
+.tabs .tab-content label {
+  font-size: 18px;
+}
+.tabs .tab-content .button {
+  width: 259px;
+  font-size: 24px;
+}
+.hide {
+  display: none;
 }

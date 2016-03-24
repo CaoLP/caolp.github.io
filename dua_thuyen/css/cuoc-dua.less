@@ -1,0 +1,153 @@
+@import "variable";
+@import "function";
+
+#dua-thuyen, #the-le, #giai-thuong, #so-do, #dang-ky {
+  .container {
+    height: 716px;
+    position: relative;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0;
+  }
+}
+
+.banner {
+  .content {
+    position: absolute;
+    z-index: 2;
+    bottom: 15%;
+    right: 15%;
+    width: 427px;
+  }
+  h1 {
+    font-size: 72px;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 18px;
+  }
+  .overlay, .banner-video {
+    width: 105%;
+    left: -15px;
+    position: absolute;
+  }
+  .overlay {
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+#the-le {
+  background: @yellow url("../images/cuoc-dua/bg-06.png") no-repeat bottom right;
+  background-size: auto 100%;
+  .content {
+    width: 690px;
+    margin-left: 12%;
+    margin-top: 5%;
+    font-size: 20px;
+    line-height: 24px;
+    h1 {
+      margin-bottom: 50px;
+    }
+    h2 {
+      border-bottom: 1px solid;
+      display: inline-block;
+      margin: 0;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+}
+
+#giai-thuong {
+  h1 {
+    text-align: center;
+  }
+  .content {
+    width: 1034px;
+    height: 558px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 40px;
+  }
+  table {
+    width: 80%;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-weight : bold;
+    font-size : 30px;
+    .icon-cup{
+      width : 89px;
+      height : 62px;
+      margin-left: -25px;
+      vertical-align: bottom;
+    }
+    .icon-medal{
+      width : 33px;
+      height : 55px;
+      margin-right: 30px;
+      vertical-align: bottom;
+    }
+    tr {
+      td {
+        border-right: 1px dashed @gold;
+        border-bottom: 1px dashed @gold;
+        vertical-align: bottom;
+        &:last-child {
+          border-right: none;
+          padding-left: 30px;
+        }
+      }
+      &:last-child {
+        td {
+          height: 30px;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+#so-do{
+  h1{
+    color: @n-red;
+    padding-top: 40px;
+    padding-left: 10%;
+  }
+  .overlay{
+    position: absolute;
+    width: 70%;
+  }
+  img{
+    width : 1043px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+#dang-ky{
+  .content{
+    padding-top: 100px;
+    .btn-dangky{
+      width : 536px;
+      height : 140px;
+      line-height : 120px;
+      font-size: 60px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+  .left, .right{
+    width : 137px;
+    height : 63px;
+    vertical-align: middle;
+  }
+}

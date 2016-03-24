@@ -1,0 +1,136 @@
+@import "variable";
+@import "function";
+
+.title {
+  padding-left: 12%;
+  .icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 60px;
+    color: @yellow;
+    border-bottom: 1px solid @yellow;
+    display: inline-block;
+  }
+}
+
+#thong-tin, #hoat-dong, #mua-ve {
+  .container {
+    height: 716px;
+    position: relative;
+  }
+}
+
+.banner {
+  .overlay, .banner-video {
+    width: 105%;
+    left: -15px;
+    position: absolute;
+  }
+  .overlay {
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+#thong-tin {
+  .content {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 2;
+    width: 523px;
+    font-size: 20px;
+    color: @black;
+    h1 {
+      font-size: 70px;
+      margin: 0;
+      color: @orange;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+#hoat-dong {
+  background: @green url("../images/hoat-dong/hoat-dong-footer.png") repeat-x bottom;
+  background-size: auto 70px;
+  img {
+    width: 390px;
+    height: 283px;
+  }
+  table {
+    width: 100%;
+    tr {
+      th {
+        padding-left: 25px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 36px;
+        color: @black;
+        border-bottom: 1px solid @white;
+        &:first-child {
+          border-right: 1px solid @white;
+          width: 200px;
+        }
+        &:last-child {
+          padding-left: 100px;
+        }
+      }
+      td {
+        padding-left: 25px;
+        font-weight: bold;
+        font-size: 20px;
+        color: @white;
+        border-bottom: 1px solid @white;
+        &:first-child {
+          border-right: 1px solid @white;
+        }
+        &:last-child {
+          padding-left: 100px;
+        }
+      }
+      &:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+#mua-ve {
+  background: @orange url("../images/hoat-dong/bg.png") no-repeat bottom left;
+  background-size: auto 80%;
+  .content{
+    margin-left: 30%;
+  }
+  .ticket-form {
+    width: 421px;
+    label {
+      font-size: 16px;
+      line-height: 45px;
+      text-align: right;
+      width: 100%;
+      display: block;
+    }
+    .form-control {
+      background: @yellow;
+    }
+    .button{
+      font-size : 24px;
+    }
+  }
+  .ticket-image {
+    margin-top: 45px;
+    img {
+      width: 652px;
+      height: 288px;
+    }
+  }
+}

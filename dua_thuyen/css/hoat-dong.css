@@ -1,0 +1,176 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(15deg);
+  }
+  100% {
+    -moz-transform: rotate(30deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  50% {
+    -ms-transform: rotate(15deg);
+  }
+  100% {
+    -ms-transform: rotate(30deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  50% {
+    -o-transform: rotate(15deg);
+  }
+  100% {
+    -o-transform: rotate(30deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+.title {
+  padding-left: 12%;
+}
+.title .icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 30px;
+  margin-right: 15px;
+}
+.title h1 {
+  font-weight: bold;
+  font-size: 60px;
+  color: #fff2ae;
+  border-bottom: 1px solid #fff2ae;
+  display: inline-block;
+}
+#thong-tin .container,
+#hoat-dong .container,
+#mua-ve .container {
+  height: 716px;
+  position: relative;
+}
+.banner .overlay,
+.banner .banner-video {
+  width: 105%;
+  left: -15px;
+  position: absolute;
+}
+.banner .overlay {
+  height: 100%;
+  z-index: 1;
+}
+#thong-tin .content {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 2;
+  width: 523px;
+  font-size: 20px;
+  color: #000000;
+}
+#thong-tin .content h1 {
+  font-size: 70px;
+  margin: 0;
+  color: #f9761e;
+}
+#thong-tin .content p {
+  margin: 0;
+}
+#hoat-dong {
+  background: #7cb591 url("../images/hoat-dong/hoat-dong-footer.png") repeat-x bottom;
+  background-size: auto 70px;
+}
+#hoat-dong img {
+  width: 390px;
+  height: 283px;
+}
+#hoat-dong table {
+  width: 100%;
+}
+#hoat-dong table tr th {
+  padding-left: 25px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 36px;
+  color: #000000;
+  border-bottom: 1px solid #ffffff;
+}
+#hoat-dong table tr th:first-child {
+  border-right: 1px solid #ffffff;
+  width: 200px;
+}
+#hoat-dong table tr th:last-child {
+  padding-left: 100px;
+}
+#hoat-dong table tr td {
+  padding-left: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+#hoat-dong table tr td:first-child {
+  border-right: 1px solid #ffffff;
+}
+#hoat-dong table tr td:last-child {
+  padding-left: 100px;
+}
+#hoat-dong table tr:last-child td {
+  border-bottom: none;
+}
+#mua-ve {
+  background: #f9761e url("../images/hoat-dong/bg.png") no-repeat bottom left;
+  background-size: auto 80%;
+}
+#mua-ve .content {
+  margin-left: 30%;
+}
+#mua-ve .ticket-form {
+  width: 421px;
+}
+#mua-ve .ticket-form label {
+  font-size: 16px;
+  line-height: 45px;
+  text-align: right;
+  width: 100%;
+  display: block;
+}
+#mua-ve .ticket-form .form-control {
+  background: #fff2ae;
+}
+#mua-ve .ticket-form .button {
+  font-size: 24px;
+}
+#mua-ve .ticket-image {
+  margin-top: 45px;
+}
+#mua-ve .ticket-image img {
+  width: 652px;
+  height: 288px;
+}
