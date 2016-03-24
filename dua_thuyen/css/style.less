@@ -83,7 +83,7 @@ a {
 footer {
   height: 96px;
   padding-top: 20px;
-  background: @black;
+  background: @gray;
   font-size: 14px;
   color: @white;
 }
@@ -244,7 +244,7 @@ footer {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  background: @black;
+  background: @gray;
   &:before, &:after {
     content: " ";
     display: table;
@@ -518,6 +518,15 @@ footer {
   &.icon-medal {
     background: url("../images/icons/medal.png");
   }
+  &.icon-person {
+    background: url("../images/icons/person.png");
+  }
+  &.icon-clock {
+    background: url("../images/icons/clock.png");
+  }
+  &.icon-note {
+    background: url("../images/icons/note.png");
+  }
 }
 
 .page {
@@ -609,6 +618,7 @@ textarea.form-control {
     right: 10px;
     display: block;
     cursor: pointer;
+    z-index: 10;
     img {
       width: 20px;
       height: 20px;
@@ -696,4 +706,10 @@ span {
 
 .hide {
   display: none;
+}
+.fluid-video{
+  width: 100%;
+  padding: 35px;
+  padding-bottom: 0;
+  padding-top: 15px;
 }
