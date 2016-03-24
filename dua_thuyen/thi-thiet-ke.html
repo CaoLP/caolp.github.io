@@ -232,10 +232,51 @@
 	</div>
 </div>
 <div class="modal" id="modal-gallery">
-	<a class="close-modal-btn"><img src="images/close-btn.png"></a>
+	<div class="overlay bg-green"></div>
+	<a class="close-modal-btn"><img src="images/close-modal-button.png"></a>
+	<div class="modal-body">
+		<div class="view-list">
+			<ul>
+				<li id="view-1">
+					<img class="view" src="images/thiet-ke/thuyen-1.png">
+					<div class="des"><img src="images/thiet-ke/thuyen-1-des.png"></div>
+				</li>
+				<li class="hide" id="view-2">
+					<img class="view" src="images/thiet-ke/thuyen-2.png">
+					<div class="des"><img src="images/thiet-ke/thuyen-2-des.png"></div>
+				</li>
+				<li class="hide" id="view-3">
+					<img class="view" src="images/thiet-ke/thuyen-3.png">
+					<div class="des"><img src="images/thiet-ke/thuyen-3-des.png"></div>
+				</li>
+				<li class="hide" id="view-4">
+					<img class="view" src="images/thiet-ke/thuyen-4.png">
+					<div class="des"><img src="images/thiet-ke/thuyen-4-des.png"></div>
+				</li>
+				<li class="hide" id="view-5">
+					<img class="view" src="images/thiet-ke/thuyen-5.png">
+					<div class="des"><img src="images/thiet-ke/thuyen-5-des.png"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="thumb-list">
+			<a class="slide-left"><img src="images/thiet-ke/arrow-left.png"></a>
+			<ul>
+				<li><a class="thumbnail" data-target="view-1"><img src="images/thiet-ke/thuyen-1.png"></a></li>
+				<li><a class="thumbnail" data-target="view-2"><img src="images/thiet-ke/thuyen-2.png"></a></li>
+				<li class="active"><a class="thumbnail" data-target="view-3"><img src="images/thiet-ke/thuyen-3.png"></a></li>
+				<li><a class="thumbnail" data-target="view-4"><img src="images/thiet-ke/thuyen-4.png"></a></li>
+				<li><a class="thumbnail" data-target="view-5"><img src="images/thiet-ke/thuyen-5.png"></a></li>
+			</ul>
+			<a class="slide-right"><img src="images/thiet-ke/arrow-right.png"></a>
+			<div class="text-center pagination">
+				<a><</a><a>1</a><a>2</a><a class="active">3</a><a>4</a><a>5</a>......<a>112</a><a>113</a><a>></a>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="modal" id="modal-play">
-	<a class="close-modal-btn"><img src="images/close-btn.png"></a>
+	<a class="close-modal-btn"><img src="images/close-modal-button.png"></a>
 	<div class="modal-body">
 		<video class="fluid-video" controls="false" autoplay="true" loop="true">
 			<source src="images/game.mp4" type="video/mp4">
