@@ -77,11 +77,23 @@
       z-index: 4;
       left: 55px;
       top: 45px;
+      &:hover{
+        transform: translate(50px,0);
+        -webkit-transform: translate(50px,0); /** Chrome & Safari **/
+        -o-transform: translate(50px,0); /** Opera **/
+        -moz-transform: translate(50px,0); /** Firefox **/
+      }
     }
     #btn-v-2 {
       z-index: 2;
       right: 125px;
       top: 45px;
+      &:hover{
+        transform: translate(50px,0);
+        -webkit-transform: translate(50px,0); /** Chrome & Safari **/
+        -o-transform: translate(50px,0); /** Opera **/
+        -moz-transform: translate(50px,0); /** Firefox **/
+      }
     }
   }
 }
