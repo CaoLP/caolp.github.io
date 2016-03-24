@@ -1,0 +1,163 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(15deg);
+  }
+  100% {
+    -moz-transform: rotate(30deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  50% {
+    -ms-transform: rotate(15deg);
+  }
+  100% {
+    -ms-transform: rotate(30deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  50% {
+    -o-transform: rotate(15deg);
+  }
+  100% {
+    -o-transform: rotate(30deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+#cau-tao .container,
+#giai-thuong-the-le .container,
+#thiet-ke .container {
+  height: 716px;
+  position: relative;
+}
+#cau-tao h1,
+#giai-thuong-the-le h1,
+#thiet-ke h1 {
+  font-weight: bold;
+  font-size: 60px;
+  margin: 0;
+}
+#cau-tao .content {
+  position: absolute;
+  z-index: 2;
+  width: 528px;
+  height: 263px;
+  top: 30%;
+  left: 10%;
+}
+#cau-tao h1 {
+  font-family: "UTMSwiss721BlackCondensed";
+  font-size: 72px;
+  text-transform: uppercase;
+  color: #113f3e;
+}
+#cau-tao p {
+  font-size: 18px;
+  color: #000000;
+}
+#cau-tao .overlay,
+#cau-tao .banner-video {
+  width: 105%;
+  left: -15px;
+  position: absolute;
+}
+#cau-tao .overlay {
+  height: 100%;
+  z-index: 1;
+}
+#giai-thuong-the-le .content {
+  width: 941px;
+  height: 447px;
+  padding-left: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#giai-thuong-the-le .content #bg-1,
+#giai-thuong-the-le .content #bg-2,
+#giai-thuong-the-le .content #bg-3 {
+  height: 395px;
+  position: absolute;
+}
+#giai-thuong-the-le .content #bg-1 {
+  z-index: 5;
+}
+#giai-thuong-the-le .content #bg-2 {
+  z-index: 3;
+  margin-left: 200px;
+}
+#giai-thuong-the-le .content #bg-3 {
+  z-index: 1;
+  margin-left: 650px;
+}
+#giai-thuong-the-le .content #btn-v-1,
+#giai-thuong-the-le .content #btn-v-2 {
+  position: absolute;
+}
+#giai-thuong-the-le .content #btn-v-1 img,
+#giai-thuong-the-le .content #btn-v-2 img {
+  height: 284px;
+}
+#giai-thuong-the-le .content #btn-v-1 {
+  z-index: 4;
+  left: 55px;
+  top: 45px;
+}
+#giai-thuong-the-le .content #btn-v-2 {
+  z-index: 2;
+  right: 125px;
+  top: 45px;
+}
+#thiet-ke {
+  background: #f9761e url("../images/thiet-ke/dragon-05.png") no-repeat bottom right;
+  background-size: auto 80%;
+}
+#thiet-ke .content {
+  position: absolute;
+  left: 25%;
+  bottom: 20%;
+}
+#thiet-ke .content h1,
+#thiet-ke .content h2 {
+  margin: 0;
+}
+#thiet-ke .content h1 {
+  font-family: "UTMSwiss721BlackCondensed";
+  font-size: 108px;
+  text-transform: uppercase;
+}
+#thiet-ke .content h2 {
+  font-family: "UTMSwiss721BlackCondensed";
+  font-size: 48px;
+  text-transform: uppercase;
+}
