@@ -38,13 +38,13 @@ $(function () {
 		$('.tab').parent().removeClass('active');
 		$('a[target="tab-2"]').parent().addClass('active');
 		$('.tab-content').hide();
-		$('#tab-2').show();
+		$('#tab-2').removeClass('hide').show();
 	});
 	$('#btn-step-2').on('click', function () {
 		$('.tab').parent().removeClass('active');
 		$('a[target="tab-3"]').parent().addClass('active');
 		$('.tab-content').hide();
-		$('#tab-3').show();
+		$('#tab-3').removeClass('hide').show();
 	});
 	$('#btn-step-3').on('click', function () {
 		$('.modal').hide();
@@ -56,7 +56,13 @@ $(function () {
 	//    $('.tab-content').hide();
 	//    $('#' + target).show();
 	//});
-
+	$('.thumbnail').on('click', function () {
+		$('.thumbnail').parent().removeClass('active');
+		$(this).parent().addClass('active');
+		var target = $(this).data('target');
+		$('.view-list li').addClass('hide');
+		$('#' + target).removeClass('hide');
+	});
 
 	var month = '';
 	for (var i = 1; i <= 30; i++) {
