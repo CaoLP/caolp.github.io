@@ -136,6 +136,24 @@ a {
   display: inline-block;
   position: relative;
 }
+.nav ul > li.active,
+.nav ul > li.dropdown:hover,
+.nav ul > li.dropdown:active,
+.nav ul > li.dropdown:focus {
+  background: #ce8212;
+}
+.nav ul > li.active > a,
+.nav ul > li.dropdown:hover > a,
+.nav ul > li.dropdown:active > a,
+.nav ul > li.dropdown:focus > a {
+  color: #fcecab;
+}
+.nav ul > li.active > .dropdown-menu,
+.nav ul > li.dropdown:hover > .dropdown-menu,
+.nav ul > li.dropdown:active > .dropdown-menu,
+.nav ul > li.dropdown:focus > .dropdown-menu {
+  display: block;
+}
 .nav ul > li > a {
   position: relative;
   display: block;
@@ -156,6 +174,68 @@ a {
 }
 .nav .nav-right {
   float: right;
+}
+.nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  right: 0;
+  width: 150px;
+}
+.nav .dropdown-menu > li {
+  float: none;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+  border-bottom: 1px solid #000000;
+  white-space: nowrap;
+  background: #ce8212;
+}
+.nav .dropdown-menu > li > a {
+  color: #000000;
+  display: block;
+  padding: 3px 0;
+  clear: both;
+  font-weight: normal;
+  line-height: 2.5;
+}
+.nav .dropdown-menu > li:first-child {
+  margin-top: 21px;
+}
+.nav .dropdown-menu > li:first-child:before {
+  content: ' ';
+  height: 21px;
+  width: 100%;
+  border-bottom: none;
+  background: url("../images/menu-arrow.png") no-repeat bottom;
+  background-size: auto 100%;
+  background-position-x: 10px;
+  display: block;
+  position: absolute;
+  top: -21px;
+  z-index: 100;
+}
+.nav .dropdown-menu > li:last-child {
+  border-bottom: none;
+}
+.nav .dropdown-menu > li.active,
+.nav .dropdown-menu > li:hover,
+.nav .dropdown-menu > li:active,
+.nav .dropdown-menu > li:focus {
+  background: #b86500;
+}
+.nav .dropdown-menu > li.active > a,
+.nav .dropdown-menu > li:hover > a,
+.nav .dropdown-menu > li:active > a,
+.nav .dropdown-menu > li:focus > a {
+  color: #fcecab;
 }
 footer {
   position: absolute;

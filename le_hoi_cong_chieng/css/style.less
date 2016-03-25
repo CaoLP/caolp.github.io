@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Neusa-Regular';
-  src: url('../fonts/Neusa-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Neusa-Regular.otf')  format('opentype'),
-  url('../fonts/Neusa-Regular.woff') format('woff'), url('../fonts/Neusa-Regular.ttf')  format('truetype'), url('../fonts/Neusa-Regular.svg#Neusa-Regular') format('svg');
+  src: url('../fonts/Neusa-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Neusa-Regular.otf') format('opentype'),
+  url('../fonts/Neusa-Regular.woff') format('woff'), url('../fonts/Neusa-Regular.ttf') format('truetype'), url('../fonts/Neusa-Regular.svg#Neusa-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -146,6 +146,17 @@ a {
     & > li {
       display: inline-block;
       position: relative;
+
+      &.active, &.dropdown:hover, &.dropdown:active, &.dropdown:focus {
+        background: @dark-yellow;
+        & > a {
+          color: @light-yellow;
+        }
+        & > .dropdown-menu {
+          display: block;
+        }
+      }
+
       > a {
         position: relative;
         display: block;
@@ -168,8 +179,65 @@ a {
   .nav-right {
     float: right;
   }
-}
 
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    right: 0;
+    width: 150px;
+    & > li {
+      float: none;
+      text-align: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: block;
+      border-bottom: 1px solid @black;
+      white-space: nowrap;
+      background: @dark-yellow;
+      & > a {
+        color: @black;
+        display: block;
+        padding: 3px 0;
+        clear: both;
+        font-weight: normal;
+        line-height: 2.5;
+      }
+      &:first-child {
+        margin-top: 21px;
+        &:before {
+          content: ' ';
+          height: 21px;
+          width: 100%;
+          border-bottom: none;
+          background: url("../images/menu-arrow.png") no-repeat bottom;
+          background-size: auto 100%;
+          background-position-x: 10px;
+          display: block;
+          position: absolute;
+          top: -21px;
+          z-index: 100;
+        }
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      &.active, &:hover, &:active, &:focus {
+        background: @meta-yellow;
+        & > a {
+          color: @light-yellow;
+        }
+      }
+    }
+  }
+
+}
 
 footer {
   position: absolute;
