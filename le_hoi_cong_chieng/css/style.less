@@ -1,6 +1,15 @@
 @import "variable.less";
 
+@font-face {
+  font-family: 'Neusa-Regular';
+  src: url('../fonts/Neusa-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Neusa-Regular.otf')  format('opentype'),
+  url('../fonts/Neusa-Regular.woff') format('woff'), url('../fonts/Neusa-Regular.ttf')  format('truetype'), url('../fonts/Neusa-Regular.svg#Neusa-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
+  font-family: 'Neusa-Regular';
   margin: 0;
   height: 100%;
   overflow: hidden;
@@ -93,9 +102,9 @@ a {
     margin: 5px 0px 5px 5px;
     height: 20px;
     display: inline-block;
-    width: 157px;
+    width: 147px;
     border: none;
-    padding: 0;
+    padding: 0px 0px 0px 10px;
     float: left;
   }
   button {
@@ -119,8 +128,9 @@ a {
   margin-top: 50px;
   .logo {
     position: absolute;
-    left: 50%;
     top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
     img {
       width: 142px;
       height: 142px;
@@ -160,28 +170,6 @@ a {
   }
 }
 
-.home-caption {
-  position: absolute;
-  right: 15%;
-  top: 30%;
-  z-index: 10;
-
-  img {
-    width: 289px;
-    height: 177px;
-  }
-}
-
-.chieng {
-  position: absolute;
-  bottom: -200px;
-  left: 30%;
-  z-index: 10;
-  img {
-    width: 603px;
-    height: 603px;
-  }
-}
 
 footer {
   position: absolute;
