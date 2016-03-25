@@ -16,8 +16,32 @@ body {
   background: url("../images/background.png") no-repeat center;
   background-size: 100%;
 }
+body.blue .nav {
+  background: #002d64;
+}
+body.blue .nav ulactive,
+body.blue .nav ul > li:hover,
+body.blue .nav ul > li:active,
+body.blue .nav ul > li:focus {
+  background: #000f41;
+}
+body.blue .nav ulactive > a,
+body.blue .nav ul > li:hover > a,
+body.blue .nav ul > li:active > a,
+body.blue .nav ul > li:focus > a {
+  color: #ce8212;
+}
 a {
   text-decoration: none;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .icon {
   width: 24px;
@@ -64,10 +88,14 @@ a {
 .container {
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 50px;
+  padding-top: 35px;
+  width: 1024px;
+  margin: 0 auto;
 }
 .top-social {
   display: inline-block;
+  z-index: 100;
+  position: relative;
 }
 .top-social a {
   display: inline-block;
@@ -112,7 +140,10 @@ a {
   height: 40px;
   background: #fcecab;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
 }
 .nav .logo {
   position: absolute;
@@ -127,6 +158,7 @@ a {
 .nav > .container {
   padding: 0 50px;
   position: relative;
+  height: 100%;
 }
 .nav ul {
   list-style: none;
@@ -136,18 +168,27 @@ a {
   display: inline-block;
   position: relative;
 }
+.nav ul > li:hover,
+.nav ul > li:active,
+.nav ul > li:focus,
 .nav ul > li.active,
 .nav ul > li.dropdown:hover,
 .nav ul > li.dropdown:active,
 .nav ul > li.dropdown:focus {
   background: #ce8212;
 }
+.nav ul > li:hover > a,
+.nav ul > li:active > a,
+.nav ul > li:focus > a,
 .nav ul > li.active > a,
 .nav ul > li.dropdown:hover > a,
 .nav ul > li.dropdown:active > a,
 .nav ul > li.dropdown:focus > a {
   color: #fcecab;
 }
+.nav ul > li:hover > .dropdown-menu,
+.nav ul > li:active > .dropdown-menu,
+.nav ul > li:focus > .dropdown-menu,
 .nav ul > li.active > .dropdown-menu,
 .nav ul > li.dropdown:hover > .dropdown-menu,
 .nav ul > li.dropdown:active > .dropdown-menu,
@@ -171,9 +212,17 @@ a {
 }
 .nav .nav-left {
   float: left;
+  text-align: left;
+}
+.nav .nav-left > li {
+  margin-right: 100px;
 }
 .nav .nav-right {
   float: right;
+  text-align: right;
+}
+.nav .nav-right > li {
+  margin-left: 100px;
 }
 .nav .dropdown-menu {
   position: absolute;
@@ -237,6 +286,47 @@ a {
 .nav .dropdown-menu > li:focus > a {
   color: #fcecab;
 }
+.back-ground {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.back-ground .layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.back-ground .layer.layer-1 {
+  z-index: 1;
+}
+.back-ground .layer.layer-2 {
+  z-index: 2;
+}
+.back-ground .layer.layer-3 {
+  z-index: 3;
+}
+.back-ground .layer.layer-4 {
+  z-index: 4;
+}
+.back-ground .layer.layer-5 {
+  z-index: 5;
+}
+.back-ground .layer.layer-6 {
+  z-index: 6;
+}
+.back-ground .layer.layer-7 {
+  z-index: 7;
+}
+.back-ground .layer.layer-8 {
+  z-index: 8;
+}
+.back-ground .layer.layer-9 {
+  z-index: 9;
+}
+.back-ground .layer.layer-10 {
+  z-index: 10;
+}
 footer {
   position: absolute;
   bottom: 0;
@@ -246,6 +336,6 @@ footer {
   color: #ffffff;
   text-align: center;
   line-height: 20px;
-  padding: 15px;
+  padding: 5px;
   z-index: 11;
 }

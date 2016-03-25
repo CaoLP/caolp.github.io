@@ -19,12 +19,33 @@ html, body {
 body {
   background: url("../images/background.png") no-repeat center;
   background-size: 100%;
+  &.blue {
+    .nav {
+      background: @blue;
+      ul {
+        &active, & > li:hover, & > li:active, & > li:focus {
+          background: @hard-blue;
+          & > a {
+            color: @dark-yellow;
+          }
+        }
+      }
+    }
+  }
 }
 
 a {
   text-decoration: none;
 }
-
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
 .icon {
   width: 24px;
   height: 24px;
@@ -74,11 +95,15 @@ a {
 .container {
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 50px;
+  padding-top: 35px;
+  width: 1024px;
+  margin: 0 auto;
 }
 
 .top-social {
   display: inline-block;
+  z-index: 100;
+  position: relative;
   a {
     display: inline-block;
   }
@@ -125,7 +150,10 @@ a {
   height: 40px;
   background: @light-yellow;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
   .logo {
     position: absolute;
     top: -50px;
@@ -139,6 +167,10 @@ a {
   & > .container {
     padding: 0 50px;
     position: relative;
+    height: 100%;
+    & > ul {
+
+    }
   }
   ul {
     list-style: none;
@@ -146,7 +178,7 @@ a {
     & > li {
       display: inline-block;
       position: relative;
-
+      &:hover, &:active, &:focus,
       &.active, &.dropdown:hover, &.dropdown:active, &.dropdown:focus {
         background: @dark-yellow;
         & > a {
@@ -175,9 +207,17 @@ a {
   }
   .nav-left {
     float: left;
+    text-align: left;
+    & > li {
+      margin-right: 100px;
+    }
   }
   .nav-right {
     float: right;
+    text-align: right;
+    & > li {
+      margin-left: 100px;
+    }
   }
 
   .dropdown-menu {
@@ -239,6 +279,26 @@ a {
 
 }
 
+.back-ground {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  .layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    .generate-layers(@n, @i: 1) when (@i =< @n) {
+      &.layer-@{i} {
+        z-index: @i;
+      }
+      .generate-layers(@n, (@i + 1));
+    }
+    .generate-layers(10);
+  }
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -248,6 +308,6 @@ footer {
   color: @white;
   text-align: center;
   line-height: 20px;
-  padding: 15px;
+  padding: 5px;
   z-index: 11;
 }
