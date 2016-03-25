@@ -1,9 +1,18 @@
 @import "variable.less";
+@import "functions";
 
 @font-face {
   font-family: 'Neusa-Regular';
   src: url('../fonts/Neusa-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Neusa-Regular.otf') format('opentype'),
   url('../fonts/Neusa-Regular.woff') format('woff'), url('../fonts/Neusa-Regular.ttf') format('truetype'), url('../fonts/Neusa-Regular.svg#Neusa-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SVN-AgencyFB';
+  src: url('../fonts/SVN-AgencyFB.eot?#iefix') format('embedded-opentype'), url('../fonts/SVN-AgencyFB.woff') format('woff'),
+  url('../fonts/SVN-AgencyFB.ttf') format('truetype'), url('../fonts/SVN-AgencyFB.svg#SVN-AgencyFB') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,8 +31,8 @@ body {
   &.blue {
     .nav {
       background: @blue;
-      ul {
-        &active, & > li:hover, & > li:active, & > li:focus {
+      & > .container > ul {
+        & > li.active, & > li:hover, & > li:active, & > li:focus {
           background: @hard-blue;
           & > a {
             color: @dark-yellow;
@@ -37,15 +46,31 @@ body {
 a {
   text-decoration: none;
 }
-.text-left{
+
+.hide {
+  display: none;
+}
+
+.hide-a {
+  .use-animation(fade-out, 500ms, 1, linear);
+}
+
+.show {
+  .use-animation(fade-in, 500ms, 1, linear);
+}
+
+.text-left {
   text-align: left;
 }
-.text-center{
+
+.text-center {
   text-align: center;
 }
-.text-right{
+
+.text-right {
   text-align: right;
 }
+
 .icon {
   width: 24px;
   height: 24px;
@@ -178,8 +203,14 @@ a {
     & > li {
       display: inline-block;
       position: relative;
+      &.active {
+        background: @dark-yellow;
+        & > a {
+          color: @light-yellow;
+        }
+      }
       &:hover, &:active, &:focus,
-      &.active, &.dropdown:hover, &.dropdown:active, &.dropdown:focus {
+      &.dropdown:hover, &.dropdown:active, &.dropdown:focus {
         background: @dark-yellow;
         & > a {
           color: @light-yellow;
@@ -232,6 +263,7 @@ a {
     font-size: 12px;
     right: 0;
     width: 150px;
+    font-family: 'SVN-AgencyFB';
     & > li {
       float: none;
       text-align: left;
@@ -248,6 +280,7 @@ a {
         clear: both;
         font-weight: normal;
         line-height: 2.5;
+        text-transform: none;
       }
       &:first-child {
         margin-top: 21px;

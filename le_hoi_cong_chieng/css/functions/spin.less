@@ -1,0 +1,33 @@
+@-webkit-keyframes spin {
+  .rotate("-webkit-");
+}
+
+@-moz-keyframes spin {
+  .rotate("-moz-");
+}
+
+@-ms-keyframes spin {
+  .rotate("-ms-");
+}
+
+@-o-keyframes spin {
+  .rotate("-o-");
+}
+
+@keyframes spin {
+  .rotate("");
+}
+
+.rotate (@key) {
+  @tyle: "transform";
+  0% {
+      @{key}@{tyle}: rotate(0deg);
+  }
+  50% {
+      @{key}@{tyle}: rotate(15deg);
+  }
+  100% {
+      @{key}@{tyle}: rotate(30deg);
+  }
+}
+

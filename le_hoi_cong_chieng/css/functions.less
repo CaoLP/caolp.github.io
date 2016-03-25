@@ -1,0 +1,43 @@
+@import "functions/spin";
+
+.fadeIn(){
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.dofadeIn() {
+  @-moz-keyframes fade-in { .fadeIn(); }
+  @-webkit-keyframes fade-in { .fadeIn(); }
+  @keyframes fade-in { .fadeIn(); }
+}
+.fadeIn(){
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.dofadeOut() {
+  @-moz-keyframes fade-in { .fadeIn(); }
+  @-webkit-keyframes fade-in { .fadeIn(); }
+  @keyframes fade-in { .fadeIn(); }
+}
+.dofadeOut();
+
+.use-animation(@key, @time, @iteration-count, @timing-function){
+  -webkit-animation-name: @key;
+  -webkit-animation-duration: @time;
+  -webkit-animation-iteration-count: @iteration-count;
+  -webkit-animation-timing-function: @timing-function;
+
+  -moz-animation-name: @key;
+  -moz-animation-duration: @time;
+  -moz-animation-iteration-count: @iteration-count;
+  -moz-animation-timing-function: @timing-function;
+
+  -ms-animation-name: @key;
+  -ms-animation-duration: @time;
+  -ms-animation-iteration-count: @iteration-count;
+  -ms-animation-timing-function: @timing-function;
+
+  -o-animation-name: @key;
+  -o-animation-duration: @time;
+  -o-animation-iteration-count: @iteration-count;
+  -o-animation-timing-function: @timing-function;
+}
