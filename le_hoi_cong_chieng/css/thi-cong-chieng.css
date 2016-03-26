@@ -25,16 +25,23 @@ body {
   height: 26% !important;
 }
 .layer-5 {
-  background: url("../images/gioithieu/tree-mountain.png") no-repeat bottom;
+  background: url("../images/night.png") no-repeat bottom;
   background-size: 100% auto;
 }
 .layer-6 {
-  background: url("../images/gioithieu/tree-mountain-2.png") no-repeat bottom;
-  background-size: 100% auto;
+  background: url("../images/thi/nha-san.png") no-repeat bottom left;
+  background-size: 45% auto;
+  background-position-y: 70%;
+  background-position-x: 10%;
 }
-#gioi-thieu .content {
-  width: 523px;
-  height: 532px;
+.layer-7 {
+  background: url("../images/thi/giai.png") no-repeat center;
+  background-size: 60% auto;
+  background-position-y: 70%;
+}
+#the-le .content {
+  width: 610px;
+  height: 360px;
   right: 100px;
   bottom: 25px;
 }
@@ -52,7 +59,7 @@ body {
 .content h1 {
   background: url("../images/gioithieu/h1-bg.png") no-repeat center;
   background-size: 100%;
-  width: 274px;
+  width: 382px;
   height: 56px;
   margin: 0 auto;
   font-size: 36px;
@@ -76,7 +83,12 @@ body {
   width: 202px;
   height: 22px;
 }
-.content img.tai-tro {
-  width: 518px;
-  height: 123px;
+.content .big-link {
+  font-size: 24px;
+  color: #ffa900;
+}
+.content .arrow-right {
+  margin-left: 15px;
+  width: 18px;
+  height: 19px;
 }
