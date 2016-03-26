@@ -1,5 +1,5 @@
 @import "variable.less";
-@import "functions";
+@import "functions.less";
 
 @font-face {
   font-family: 'Neusa-Regular';
@@ -15,6 +15,12 @@
   url('../fonts/SVN-AgencyFB.ttf') format('truetype'), url('../fonts/SVN-AgencyFB.svg#SVN-AgencyFB') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -46,6 +52,25 @@ body {
 a {
   text-decoration: none;
 }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  & :before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:before {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.make-grid-columns();
+.generate-columns(@grid-columns);
 
 .hide {
   display: none;
@@ -240,14 +265,14 @@ a {
     float: left;
     text-align: left;
     & > li {
-      margin-right: 100px;
+      margin-right: 70px;
     }
   }
   .nav-right {
     float: right;
     text-align: right;
     & > li {
-      margin-left: 100px;
+      margin-left: 70px;
     }
   }
 
@@ -342,7 +367,7 @@ footer {
   text-align: center;
   line-height: 20px;
   padding: 5px;
-  z-index: 11;
+  z-index: 100;
 }
 
 .modal-overlay {
@@ -367,21 +392,22 @@ footer {
   background: @dark-yellow;
   display: none;
 
-  font-family : 'Neusa';
-  font-size : 17px;
-  h1{
-    font-family : 'SVN-AgencyFB';
-    font-size : 34px;
+  font-family: 'Neusa';
+  font-size: 17px;
+  h1 {
+    font-family: 'SVN-AgencyFB';
+    font-size: 34px;
     color: @red;
     margin: 0;
   }
-  h3{
-    font-family : 'Neusa';
-    font-size : 19px;
+  h3 {
+    font-family: 'Neusa';
+    font-size: 19px;
     color: @green;
     margin-bottom: 2px;
   }
   .coner {
+    pointer-events: none;
     position: absolute;
     width: 542px;
     height: 424px;
@@ -391,10 +417,10 @@ footer {
     left: -60px;
     top: -60px;
   }
-  .modal-body{
+  .modal-body {
     margin: 40px 70px;
     overflow: auto;
-    p{
+    p {
       margin: 0;
     }
   }
@@ -410,4 +436,91 @@ footer {
       height: 20px;
     }
   }
+}
+
+.form-control {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-family: 'Neusa';
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form {
+  label {
+    font-family: 'Neusa';
+    font-size: 18px;
+  }
+}
+
+#dang-ky {
+  width: 366px;
+  height: 477px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  .coner {
+    width: 316px;
+    height: 248px;
+    left: -30px;
+    top: -30px;
+  }
+  .form {
+    margin-top: 10px;
+  }
+  .modal-body {
+    margin: 20px 25px 20px 40px;
+    height: 100%;
+    overflow: hidden;
+  }
+  .row {
+    margin: 0;
+  }
+  .grid-4, .grid-8 {
+    padding: 0;
+  }
+  .radio {
+    label {
+      width: 70px;
+    }
+  }
+  .radio input, .radio label {
+    display: inline-block;
+  }
+  .checkbox {
+    input {
+      float: left;
+    }
+    label {
+      font-family: 'Neusa';
+      font-size: 14px;
+    }
+  }
+  button {
+    font-family: 'SVN-AgencyFB';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: @white;
+    width: 193px;
+    height: 34px;
+    background: @meta-yellow url("../images/button-02.png") no-repeat center;
+    background-size: 100%;
+    overflow: hidden;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    &:hover{
+      background: @dark-yellow url("../images/button-02.png") no-repeat center;
+      background-size: 100%;
+    }
+  }
+}
+.overlay-dang-ky{
+  display: none;
+  z-index: 99;
+}
+.layer-10 {
+  background: url("../images/dang-ky-bg.png") no-repeat bottom;
+  background-size: 100% auto;
 }

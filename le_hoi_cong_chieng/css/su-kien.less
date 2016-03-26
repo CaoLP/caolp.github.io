@@ -36,29 +36,27 @@ body {
   background-size: 100% auto;
 }
 .layer-6{
-  background: url("../images/thi/nha-san.png") no-repeat bottom left;
-  background-size: 45% auto;
-  background-position-y: 70%;
-  background-position-x: 10%;
+  background: url("../images/sukien/bg.png") no-repeat bottom center;
+  background-size: 85% auto;
+  background-position-y: 85%;
 }
 .layer-7{
   background: url("../images/thi/giai.png") no-repeat center;
-  background-size: 60% auto;
-  background-position-y: 70%;
+  background-size: 100% auto;
 }
 
-#the-le {
+#su-kien {
   .content {
-    width: 610px;
-    height: 360px;
-    right: 100px;
-    bottom: 25px;
+    width: 332px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 #ban-to-chuc {
   .content {
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -92,9 +90,9 @@ body {
     font-size: 18px;
     margin: 5px 0;
   }
-  img.dash {
-    width: 202px;
-    height: 22px;
+  img.time {
+    width : 298px;
+    height : 177px;
   }
   .big-link{
     font-size : 24px;
@@ -104,5 +102,45 @@ body {
     margin-left: 15px;
     width : 18px;
     height : 19px;
+  }
+}
+#ban-do{
+  width: auto;
+  height: auto;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;;
+  .modal-body{
+    margin: 0;
+  }
+  .ban-do{
+    height : 460px;
+  }
+}
+#luu-tru{
+  .modal-body{
+    overflow: hidden;
+  }
+  .big-link{
+    font-family : 'SVN-AgencyFB';
+    font-size : 25px;
+    color : @red;
+    img{
+      height : 20px;
+      margin-left: 10px;
+    }
+  }
+  h1{
+    margin-bottom: 30px;
+  }
+  .nha-dan{
+    height : 225px;
+  }
+  .khach-san{
+    height : 189px;
+    margin-top: 15px;
+  }
+  .link-list{
+    margin-top: 20px;
   }
 }

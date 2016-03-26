@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/thi-cong-chieng.css" type="text/css">
+    <link rel="stylesheet" href="css/su-kien.css" type="text/css">
 </head>
 <body class="blue">
 <div class="back-ground should-hide">
@@ -21,7 +21,7 @@
     <div class="layer layer-3"></div>
     <div class="layer layer-10"></div>
 </div>
-<div class="page" id="the-le">
+<div class="page" id="su-kien">
     <div class="container">
         <div class="top-social">
             <a href=""><i class="icon icon-facebook"></i></a>
@@ -44,10 +44,10 @@
                         <li><a href="ban-to-chuc.html">Ban tổ chức</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="su-kien.html"><i class="icon icon-trong"></i> Chương trình</a>
                     <ul class="dropdown-menu">
-                        <li><a href="su-kien.html">Sự kiện 2016</a></li>
+                        <li class="active"><a href="su-kien.html">Sự kiện 2016</a></li>
                         <li><a href="chuong-trinh.html">Lịch trình, hoạt động</a></li>
                     </ul>
                 </li>
@@ -56,10 +56,10 @@
                 <a href="index.html"><img src="images/logo-blue.png"></a>
             </div>
             <ul class="nav-right">
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="thi-cong-chieng.html"><i class="icon icon-chieng"></i> Thi cồng chiêng</a>
                     <ul class="dropdown-menu">
-                        <li class="active"><a href="thi-cong-chieng.html">Thể lệ, cách tham gia</a></li>
+                        <li><a href="thi-cong-chieng.html">Thể lệ, cách tham gia</a></li>
                         <li><a href="giai-thuong.html">Giải thưởng</a></li>
                     </ul>
                 </li>
@@ -71,13 +71,16 @@
         </div>
     </div>
     <div class="content text-center">
-        <h1>CÁCH THỨC THAM GIA</h1>
-        <h3>- Các nhóm không có đội múa xoang: </h3>
-        <p>- Sắp xếp múa kèm với các lễ hội được Ban Tổ Chức phục dựng</p>
-        <h3>- Các nhóm có đội múa xoang: </h3>
-        <p>- Sắp xếp múa bên đống lửa ( buổi sáng ) và múa trên sân khấu ( buổi tối )</p>
+        <h1>THỜI GIAN - ĐỊA ĐIỂM</h1>
+        <img class="time" src="images/sukien/time.png">
+        <p>
+            Năm nay sự kiện sẽ được tổ chức cực kỳ hoành tráng với hơn 4000 diễn viên múa cồng chiêng tham gia. Với hình
+            thức cùng cùng nhau thi tài sẽ đem lại cảm giác vô cùng mới lạ và độc đáo.
+        </p>
+        <a href="javascript:;" data-toggle="modal" data-target="luu-tru" class="big-link">LƯU TRÚ<img
+                class="arrow-right" src="images/icons/arrow-right.png"></a>
         <br>
-        <a href="javascript:;" data-toggle="modal" data-target="yeu-cau" class="big-link">YÊU CẦU TIẾT MỤC <img
+        <a href="javascript:;" data-toggle="modal" data-target="ban-do" class="big-link">BẢN ĐỒ<img
                 class="arrow-right" src="images/icons/arrow-right.png"></a>
     </div>
 </div>
@@ -85,26 +88,35 @@
     copyright &copy; 2009 Amvangmuaxuan. All rights reserved.
 </footer>
 <div class="modal-overlay"></div>
-<div class="modal" id="yeu-cau">
+<div class="modal" id="luu-tru">
     <div class="coner"></div>
     <a href="javascript:;" class="close-modal-btn"><img src="images/close-btn.png"></a>
+    <div class="modal-body text-center">
+        <h1>LƯU TRÚ</h1>
+       <div class="row">
+           <div class="grid-6">
+               <img class="nha-dan" src="images/sukien/nhadan.png">
+           </div>
+           <div class="grid-6">
+               <img class="khach-san" src="images/sukien/khach-san.png">
+           </div>
+       </div>
+        <div class="row link-list">
+            <div class="grid-6">
+                <a href="javascript:;" data-toggle="modal" data-target="luu-tru" class="big-link">LƯU TRÚ NHÀ DÂN<img
+                        class="arrow-right" src="images/icons/arrow-right-red.png"></a>
+            </div>
+            <div class="grid-6">
+                <a href="javascript:;" data-toggle="modal" data-target="ban-do" class="big-link">LƯU TRÚ KHÁCH SẠN<img
+                        class="arrow-right" src="images/icons/arrow-right-red.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="ban-do">
+    <a href="javascript:;" class="close-modal-btn"><img src="images/close-btn.png"></a>
     <div class="modal-body">
-        <h1>YÊU CẦU TIẾT MỤC</h1>
-        <h3>• Đội cồng chiêng:</h3>
-        <p>- Giới tính : Nam/Nữ</p>
-        <p>- Trang phục dân tộc</p>
-        <p>- Số lượng người tham gia tùy theo số lượng các nhạc cụ hoặc bài hát</p>
-        <p>- Có thể sử dụng các nhạc cụ dân tộc khác nhau ( kèn, trống, đàn… )</p>
-        <p></p>
-        <h3>• Múa xoang:</h3>
-        <p>- Giới tính : Nam/Nữ</p>
-        <p>- Trang phục dân tộc</p>
-        <p>- Số lượng người tham gia không bắt buộc</p>
-        <p></p>
-        <h3>• Yêu cầu tiết mục:</h3>
-        <p>- Đánh cồng chiêng các bài nhạc CHỦ ĐỀ MÙA XUÂN</p>
-        <p>- Thời gian : dưới 30p/ tiết mục</p>
-        <p>- Trang phục dự thi : trang phục truyền thống của dân tộc mình sinh sống</p>
+        <img class="ban-do" src="images/sukien/ban-do.png">
     </div>
 </div>
 <div class="modal" id="dang-ky">
