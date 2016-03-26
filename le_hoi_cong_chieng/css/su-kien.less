@@ -35,14 +35,18 @@ body {
   background: url("../images/night.png") no-repeat bottom;
   background-size: 100% auto;
 }
-.layer-6{
+
+.layer-6 {
   background: url("../images/sukien/bg.png") no-repeat bottom center;
   background-size: 85% auto;
   background-position-y: 85%;
 }
-.layer-7{
-  background: url("../images/thi/giai.png") no-repeat center;
-  background-size: 100% auto;
+
+.layer-7 {
+  background: url("../images/sukien/bg-2.png") no-repeat bottom left;
+  background-size: 45% auto;
+  background-position-y: 85%;
+  background-position-x: 10%;
 }
 
 #su-kien {
@@ -54,11 +58,25 @@ body {
   }
 }
 
-#ban-to-chuc {
+#chuong-trinh {
   .content {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 10%;
+    right: 10%;
+    width: 440px;
+    h1 {
+      width: 233px;
+      margin: 0px 40px;
+      background: url("../images/sukien/h1.png") no-repeat center;
+      background-size: 100%;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      text-align: left;
+      a {
+        color: @green;
+      }
+    }
   }
 }
 
@@ -91,56 +109,107 @@ body {
     margin: 5px 0;
   }
   img.time {
-    width : 298px;
-    height : 177px;
+    width: 298px;
+    height: 177px;
   }
-  .big-link{
-    font-size : 24px;
-    color : @mid-yellow;
+  .big-link {
+    font-size: 24px;
+    color: @mid-yellow;
   }
-  .arrow-right{
+  .arrow-right {
     margin-left: 15px;
-    width : 18px;
-    height : 19px;
+    width: 18px;
+    height: 19px;
   }
 }
-#ban-do{
+
+#ban-do {
   width: auto;
   height: auto;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;;
-  .modal-body{
+  .modal-body {
     margin: 0;
   }
-  .ban-do{
-    height : 460px;
+  .ban-do {
+    height: 460px;
   }
 }
-#luu-tru{
-  .modal-body{
+
+#luu-tru {
+  .modal-body {
     overflow: hidden;
   }
-  .big-link{
-    font-family : 'SVN-AgencyFB';
-    font-size : 25px;
-    color : @red;
-    img{
-      height : 20px;
+  .big-link {
+    font-family: 'SVN-AgencyFB';
+    font-size: 25px;
+    color: @red;
+    img {
+      height: 20px;
       margin-left: 10px;
     }
   }
-  h1{
+  h1 {
     margin-bottom: 30px;
   }
-  .nha-dan{
-    height : 225px;
+  .nha-dan {
+    height: 225px;
   }
-  .khach-san{
-    height : 189px;
+  .khach-san {
+    height: 189px;
     margin-top: 15px;
   }
-  .link-list{
+  .link-list {
     margin-top: 20px;
+  }
+}
+
+#luu-tru-nha-dan, #luu-tru-khach-san {
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.gallery {
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      display: inline-block;
+      width: 176px;
+      height: 131px;
+      border: 2px solid @meta-yellow;
+      overflow: hidden;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+#lich-trinh {
+  .modal-body {
+    overflow: hidden;
+    height: 80%;
+    .scroll {
+      overflow: auto;
+      height: 85%;
+    }
+  }
+  h1 {
+    text-align: center;
+  }
+  b {
+    color: @green;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+#modal-1, #modal-2, #modal-3, #modal-4, #modal-5 {
+  .modal-body {
+    overflow: hidden;
   }
 }

@@ -34,8 +34,10 @@ body {
   background-position-y: 85%;
 }
 .layer-7 {
-  background: url("../images/thi/giai.png") no-repeat center;
-  background-size: 100% auto;
+  background: url("../images/sukien/bg-2.png") no-repeat bottom left;
+  background-size: 45% auto;
+  background-position-y: 85%;
+  background-position-x: 10%;
 }
 #su-kien .content {
   width: 332px;
@@ -43,10 +45,24 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#ban-to-chuc .content {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#chuong-trinh .content {
+  bottom: 10%;
+  right: 10%;
+  width: 440px;
+}
+#chuong-trinh .content h1 {
+  width: 233px;
+  margin: 0px 40px;
+  background: url("../images/sukien/h1.png") no-repeat center;
+  background-size: 100%;
+  text-align: center;
+}
+#chuong-trinh .content ul {
+  list-style: none;
+  text-align: left;
+}
+#chuong-trinh .content ul a {
+  color: #afdba1;
 }
 .content {
   font-family: 'SVN-AgencyFB';
@@ -127,4 +143,46 @@ body {
 }
 #luu-tru .link-list {
   margin-top: 20px;
+}
+#luu-tru-nha-dan .modal-body,
+#luu-tru-khach-san .modal-body {
+  overflow: hidden;
+}
+.gallery ul {
+  list-style: none;
+  padding: 0;
+}
+.gallery ul li {
+  display: inline-block;
+  width: 176px;
+  height: 131px;
+  border: 2px solid #b86500;
+  overflow: hidden;
+}
+.gallery ul li img {
+  height: 100%;
+}
+#lich-trinh .modal-body {
+  overflow: hidden;
+  height: 80%;
+}
+#lich-trinh .modal-body .scroll {
+  overflow: auto;
+  height: 85%;
+}
+#lich-trinh h1 {
+  text-align: center;
+}
+#lich-trinh b {
+  color: #afdba1;
+}
+#lich-trinh p {
+  font-size: 18px;
+}
+#modal-1 .modal-body,
+#modal-2 .modal-body,
+#modal-3 .modal-body,
+#modal-4 .modal-body,
+#modal-5 .modal-body {
+  overflow: hidden;
 }
