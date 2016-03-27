@@ -1,33 +1,96 @@
-@-webkit-keyframes spin {
-  .rotate("-webkit-");
+@-webkit-keyframes spin-f {
+  .rotate-f("-webkit-");
 }
 
-@-moz-keyframes spin {
-  .rotate("-moz-");
+@-moz-keyframes spin-f {
+  .rotate-f("-moz-");
 }
 
-@-ms-keyframes spin {
-  .rotate("-ms-");
+@-ms-keyframes spin-f {
+  .rotate-f("-ms-");
 }
 
-@-o-keyframes spin {
-  .rotate("-o-");
+@-o-keyframes spin-f {
+  .rotate-f("-o-");
 }
 
-@keyframes spin {
-  .rotate("");
+@keyframes spin-f {
+  .rotate-f("");
+}
+@-webkit-keyframes spin-b {
+  .rotate-b("-webkit-");
 }
 
-.rotate (@key) {
+@-moz-keyframes spin-b {
+  .rotate-b("-moz-");
+}
+
+@-ms-keyframes spin-b {
+  .rotate-b("-ms-");
+}
+
+@-o-keyframes spin-b {
+  .rotate-b("-o-");
+}
+
+@keyframes spin-b {
+  .rotate-b("");
+}
+
+@-webkit-keyframes spin-f-s {
+  .rotate-sf("-webkit-");
+}
+
+@-moz-keyframes spin-f-s {
+  .rotate-sf("-moz-");
+}
+
+@-ms-keyframes spin-f-s {
+  .rotate-sf("-ms-");
+}
+
+@-o-keyframes spin-f-s {
+  .rotate-sf("-o-");
+}
+
+@keyframes spin-f-s {
+  .rotate-sf("");
+}
+
+.rotate-f (@key) {
   @tyle: "transform";
   0% {
       @{key}@{tyle}: rotate(0deg);
   }
   50% {
-      @{key}@{tyle}: rotate(15deg);
+      @{key}@{tyle}: rotate(180deg);
   }
   100% {
-      @{key}@{tyle}: rotate(30deg);
+      @{key}@{tyle}: rotate(360deg);
+  }
+}
+.rotate-b (@key) {
+  @tyle: "transform";
+  0% {
+      @{key}@{tyle}: rotate(0deg);
+  }
+  50% {
+      @{key}@{tyle}: rotate(-180deg);
+  }
+  100% {
+      @{key}@{tyle}: rotate(-360deg);
+  }
+}
+.rotate-sf (@key) {
+  @tyle: "transform";
+  0% {
+      @{key}@{tyle}: translate(-50%, -50%), rotate(0deg);
+  }
+  50% {
+      @{key}@{tyle}: translate(-50%, -50%), rotate(180deg);
+  }
+  100% {
+      @{key}@{tyle}: translate(-50%, -50%), rotate(360deg);
   }
 }
 

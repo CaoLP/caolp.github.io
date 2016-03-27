@@ -21,4 +21,17 @@ $(function () {
         $('.should-hide').show();
         $('.modal').hide();
     });
+    $('.b5').on('click', function(){
+        var audio = new Audio('sound.ogg');
+        audio.play();
+        $('.b3').addClass('show-3');
+        $('.b2').addClass('show-2');
+        $('.b1').addClass('show-1');
+        setTimeout(function(){
+            $('.b3').removeClass('show-3');
+            $('.b2').removeClass('show-2');
+            $('.b1').removeClass('show-1');
+            window.location = 'gioi-thieu.html';
+        }, 4000);
+    })
 });

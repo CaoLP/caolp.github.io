@@ -80,3 +80,17 @@ body {
   width: 518px;
   height: 123px;
 }
+@media (max-height: 643px) {
+  .layer-5 {
+    bottom: -130px;
+  }
+  #gioi-thieu .content {
+    bottom: -40px;
+  }
+  #ban-to-chuc .content {
+    z-index: 100;
+  }
+  #ban-to-chuc .content h3 {
+    margin: 5px 0 0 0;
+  }
+}

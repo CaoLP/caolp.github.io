@@ -186,3 +186,21 @@ body {
 #modal-5 .modal-body {
   overflow: hidden;
 }
+@media (max-height: 643px) {
+  .layer-5 {
+    background: url("../images/night.png") no-repeat bottom;
+    background-size: 100% auto;
+    background-position-y: -50px;
+  }
+  .layer-6 {
+    background: url("../images/sukien/bg.png") no-repeat bottom center;
+    background-size: 70% auto;
+    background-position-y: 80%;
+  }
+  .layer-7 {
+    background: url("../images/sukien/bg-2.png") no-repeat bottom left;
+    background-size: 35% auto;
+    background-position-y: 85%;
+    background-position-x: 20%;
+  }
+}

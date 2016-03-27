@@ -1,7 +1,37 @@
+.layer-1 img {
+  width: 110%;
+  position: absolute;
+  bottom: -130px;
+}
+.layer-2 img {
+  position: absolute;
+  height: 78px;
+  left: 0;
+  top: 190px;
+}
+.layer-3 img {
+  position: absolute;
+  height: 43px;
+  right: 10px;
+  top: 190px;
+}
+.layer-4 img {
+  position: absolute;
+  width: 127px;
+  height: 127px;
+  left: 205px;
+  top: 130px;
+}
+.layer-4 .sun-2 {
+  width: 108px;
+  height: 108px;
+  left: 215px;
+  top: 140px;
+}
 .home-caption {
   position: absolute;
   right: 15%;
-  top: 30%;
+  top: 25%;
   z-index: 10;
 }
 .home-caption img {
@@ -10,12 +40,54 @@
 }
 .chieng {
   position: absolute;
-  bottom: -225px;
+  bottom: -345px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+  width: 832px;
+  height: 832px;
 }
-.chieng img {
+.chieng .b1,
+.chieng .b2,
+.chieng .b3,
+.chieng .b4,
+.chieng .b5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.chieng .b1 {
+  width: 832px;
+  height: 832px;
+  opacity: 0;
+}
+.chieng .b2 {
+  width: 732px;
+  height: 732px;
+  opacity: 0;
+}
+.chieng .b3 {
+  width: 662px;
+  height: 662px;
+  opacity: 0;
+}
+.chieng .b4 {
   width: 603px;
   height: 603px;
+  position: absolute;
+}
+.chieng .b4 img {
+  width: 100%;
+}
+.chieng .b5 {
+  cursor: pointer ;
+  height: 54px;
+}
+@media (max-height: 643px) {
+  .layer-1 img {
+    width: 110%;
+    position: absolute;
+    bottom: -250px;
+  }
 }

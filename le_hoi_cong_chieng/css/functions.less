@@ -9,16 +9,29 @@
   @-webkit-keyframes fade-in { .fadeIn(); }
   @keyframes fade-in { .fadeIn(); }
 }
-.fadeIn(){
+.fadeOut(){
   0% { opacity: 1; }
   100% { opacity: 0; }
 }
 .dofadeOut() {
-  @-moz-keyframes fade-in { .fadeIn(); }
-  @-webkit-keyframes fade-in { .fadeIn(); }
-  @keyframes fade-in { .fadeIn(); }
+  @-moz-keyframes fade-in { .fadeOut(); }
+  @-webkit-keyframes fade-in { .fadeOut(); }
+  @keyframes fade-in { .fadeOut(); }
 }
 .dofadeOut();
+
+.fadeInOut(){
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.dofadeInOut() {
+  @-moz-keyframes fade-in-out { .fadeInOut(); }
+  @-webkit-keyframes fade-in-out { .fadeInOut(); }
+  @keyframes fade-in-out { .fadeInOut(); }
+}
+.dofadeInOut();
 
 .use-animation(@key, @time, @iteration-count, @timing-function){
   -webkit-animation-name: @key;

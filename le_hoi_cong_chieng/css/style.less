@@ -32,8 +32,6 @@ html, body {
 }
 
 body {
-  background: url("../images/background.png") no-repeat center;
-  background-size: 100%;
   &.blue {
     .nav {
       background: @blue;
@@ -83,7 +81,15 @@ a {
 .show {
   .use-animation(fade-in, 500ms, 1, linear);
 }
-
+.show-1 {
+  .use-animation(fade-in-out, 1000ms, 1, linear);
+}
+.show-2 {
+  .use-animation(fade-in-out, 2000ms, 1, linear);
+}
+.show-3 {
+  .use-animation(fade-in-out, 3000ms, 1, linear);
+}
 .text-left {
   text-align: left;
 }
@@ -228,6 +234,7 @@ a {
     & > li {
       display: inline-block;
       position: relative;
+      font-size: 22px;
       &.active {
         background: @dark-yellow;
         & > a {
@@ -265,14 +272,14 @@ a {
     float: left;
     text-align: left;
     & > li {
-      margin-right: 70px;
+      margin-right: 60px;
     }
   }
   .nav-right {
     float: right;
     text-align: right;
     & > li {
-      margin-left: 70px;
+      margin-left: 60px;
     }
   }
 
@@ -285,10 +292,11 @@ a {
     float: left;
     padding: 0;
     list-style: none;
-    font-size: 12px;
+    font-size: 20px;
     right: 0;
-    width: 150px;
+    width: 180px;
     font-family: 'SVN-AgencyFB';
+
     & > li {
       float: none;
       text-align: left;
@@ -510,17 +518,29 @@ footer {
     text-align: center;
     border: none;
     cursor: pointer;
-    &:hover{
+    &:hover {
       background: @dark-yellow url("../images/button-02.png") no-repeat center;
       background-size: 100%;
     }
   }
 }
-.overlay-dang-ky{
+
+.overlay-dang-ky {
   display: none;
   z-index: 99;
 }
+
 .layer-10 {
   background: url("../images/dang-ky-bg.png") no-repeat bottom;
   background-size: 100% auto;
+}
+
+.spin-circle-f {
+  .use-animation(spin-f, 10000ms, infinite, linear);
+}
+.spin-circle-b {
+  .use-animation(spin-b, 10000ms, infinite, linear);
+}
+.spin-circle-sf {
+  .use-animation(spin-s-f, 10000ms, infinite, linear);
 }
