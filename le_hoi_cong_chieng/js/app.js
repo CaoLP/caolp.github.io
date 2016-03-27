@@ -31,7 +31,7 @@ $(function () {
             $('.b3').removeClass('show-3');
             $('.b2').removeClass('show-2');
             $('.b1').removeClass('show-1');
-            window.location = 'gioi-thieu.html';
+            window.location = 'su-kien.html';
         }, 4000);
     })
 });
