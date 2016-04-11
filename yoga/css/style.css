@@ -157,6 +157,20 @@ ul.social-link img.email{
     height: 30px;
 }
 @media (max-width: 768px) {
+    .carousel-caption, .carousel-indicators{
+        bottom: 0px;
+    }
+
+    .carousel-caption .btn{
+        height: 35px;
+        font-size: 14px;
+    }
+    .carousel-caption h1 {
+        font-size: 16px;
+    }
+    .carousel-caption p {
+        font-size: 14px;
+    }
     .navbar-nav{
         float: none !important;
     }
