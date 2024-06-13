@@ -1,0 +1,35 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "7HW5W5N2ZM.com.kyanon.starbucks",
+        "paths": [
+          "/starbuckshk",
+          "/downloadApp",
+          "/payme/confirmation",
+          "/payme/unsuccessful",
+          "/eCard/confirmation",
+          "/eGift/confirmation",
+          "/reload/confirmation",
+          "/reg/confirmation",
+          "/delivery/confirmation"
+        ]
+      },
+      {
+        "appID": "P9ZDDDW5RD.com.kyanon.starbucks",
+        "paths": [
+          "/starbuckshk",
+          "/downloadApp",
+          "/payme/confirmation",
+          "/payme/unsuccessful",
+          "/eCard/confirmation",
+          "/eGift/confirmation",
+          "/reload/confirmation",
+          "/reg/confirmation",
+          "/delivery/confirmation"
+        ]
+      }
+    ]
+  }
+}
