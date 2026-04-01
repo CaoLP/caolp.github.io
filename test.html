@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    
+    <style>
+      body { margin: 0; overflow: hidden; }
+      #ui { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 10; }
+      button { padding: 10px 20px; font-size: 18px; background: #007bff; color: white; border: none; border-radius: 5px; }
+    </style>
+  </head>
+
+  <body>
+    <div id="ui">
+      <button id="spin-button">QUAY NGAY!</button>
+    </div>
+
+    <a-scene mindar-image="imageTargetSrc: ./huda-label.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-circle id="wheel" radius="0.5" rotation="0 0 0" src="./wheel-texture.png"
+                  animation="property: rotation; to: 0 0 3600; dur: 3000; easing: easeOutQuad; startEvents: spin">
+        </a-circle>
+        
+        <a-triangle color="red" vertex-a="0 0.6 0" vertex-b="-0.05 0.5 0" vertex-c="0.05 0.5 0"></a-triangle>
+      </a-entity>
+    </a-scene>
+
+    <script>
+      const wheel = document.querySelector('#wheel');
+      const btn = document.querySelector('#spin-button');
+
+      btn.addEventListener('click', () => {
+        // Kích hoạt animation quay
+        const randomDegree = Math.floor(Math.random() * 360) + 1440; // Quay ít nhất 4 vòng + góc ngẫu nhiên
+        wheel.setAttribute('animation', `to: 0 0 ${randomDegree}; dur: 3000;`);
+        wheel.emit('spin');
+        
+        setTimeout(() => {
+          alert(randomDegree % 360 > 180 ? "NHẬN THỬ THÁCH (TWIST)!" : "UỐNG ĐI (DRINK)!");
+        }, 3100);
+      });
+    </script>
+  </body>
+</html>
